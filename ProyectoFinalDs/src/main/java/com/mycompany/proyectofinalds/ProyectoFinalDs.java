@@ -4,6 +4,8 @@
 
 package com.mycompany.proyectofinalds;
 
+import java.util.Scanner;
+
 /**
  *
  * @author jeanz
@@ -11,6 +13,10 @@ package com.mycompany.proyectofinalds;
 public class ProyectoFinalDs {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        inicio_sesion is = new inicio_sesion();
+        System.out.println("Ingrese 1 si desea iniciar sesion, 2 si desea registarse");
+        Scanner s = new Scanner(System.in);
+        if()
+        
     }
 }
