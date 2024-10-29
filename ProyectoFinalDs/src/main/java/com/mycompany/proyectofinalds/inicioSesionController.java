@@ -11,8 +11,6 @@ public class inicioSesionController {
     {
         u.obtenerUsuarios();
         
-        
-        
         return false;
     }
 }
