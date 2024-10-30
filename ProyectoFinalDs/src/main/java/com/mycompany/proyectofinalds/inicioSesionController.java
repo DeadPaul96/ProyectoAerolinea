@@ -19,8 +19,6 @@ public class inicioSesionController {
                 return true;
             }
         }
-        u.obtenerUsuarios();
-        
         return false;
     }
 }
