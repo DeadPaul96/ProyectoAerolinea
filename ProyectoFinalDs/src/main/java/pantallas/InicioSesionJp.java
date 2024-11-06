@@ -133,7 +133,10 @@ public class InicioSesionJp extends javax.swing.JPanel {
         if(isc.validarUsuario(nombre, pass) != true)
         {
             lblError.setText("Usuario o contraseña incorrectos");
-        }   
+        }else
+            lblError.setText("Inicio de sesion correcto");
+            PantallaPrincipal pp = new PantallaPrincipal();
+            pp.setVisible(true);
     }//GEN-LAST:event_jButton1MouseClicked
 
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
