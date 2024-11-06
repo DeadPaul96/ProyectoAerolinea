@@ -16,12 +16,10 @@ public class Vuelo {
     private int capacidad;
     private double peso;
 
-    public Vuelo(int iD, int capacidad, double peso) {
+    public Vuelo(String iD, String capacidad, String peso) {
         this.destinos = new ArrayList<>();
         this.precio = 0.0;
-        this.idVuelo = iD;
-        this.capacidad = capacidad;
-        this.peso = peso;
+
     }
 
     public void agregarDestino(Destino destino) {
