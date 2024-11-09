@@ -6,7 +6,6 @@ package pantallas;
 
 import com.mycompany.proyectofinalds.Destino;
 import com.mycompany.proyectofinalds.DestinoControlador;
-import com.mycompany.proyectofinalds.DestinoController;
 import java.util.List;
 
 /**
@@ -19,7 +18,7 @@ DestinoControlador tc = new DestinoControlador();
     /**
      * Creates new form DestinoJP
      */
-    public DestinoJP() {
+    public TiketsJP() {
         initComponents();
         List<Destino> lista = tc.obtenerDestinos();
         String[] data = new String[lista.size()];

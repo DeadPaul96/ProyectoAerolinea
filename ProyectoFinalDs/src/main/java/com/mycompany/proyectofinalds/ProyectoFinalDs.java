@@ -4,7 +4,6 @@
 
 package com.mycompany.proyectofinalds;
 
-import pantallas.PantallaPrincipal;
 import pantallas.FrmLogin;
 
 
@@ -16,7 +15,7 @@ import pantallas.FrmLogin;
 public class ProyectoFinalDs {
 
     public static void main(String[] args) {
-        FrmLogin pp = new FrmLogin();
-        pp.setVisible(true);
+        FrmLogin pl = new FrmLogin();
+        pl.setVisible(true);         
     }
 }

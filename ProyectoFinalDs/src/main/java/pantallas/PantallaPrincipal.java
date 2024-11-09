@@ -103,9 +103,6 @@ public class PantallaPrincipal extends javax.swing.JFrame {
 
     private void jCheckBoxMenuItem2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jCheckBoxMenuItem2MousePressed
         // TODO add your handling code here:
-        InicioSesionJp i = new InicioSesionJp();
-        this.setContentPane(i);
-        i.setVisible(true);
     }//GEN-LAST:event_jCheckBoxMenuItem2MousePressed
 
     /**
