@@ -13,7 +13,7 @@ public class Destino {
     private String ubicacion;
     private int diasponible;
     
-    public Destino (String pais, String ubicacion,int diasponible  )
+    public Destino (String pais)
     {
         this.diasponible = diasponible;
         this.pais = pais;
@@ -62,5 +62,5 @@ public class Destino {
         this.diasponible = diasponible;
     }
     
-
+    
 }   
