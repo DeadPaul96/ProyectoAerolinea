@@ -2,7 +2,6 @@
 package com.mycompany.proyectofinalds;
 
 import java.util.List;
-import pantallas.PantallaPrincipal;
 
 
 public class inicioSesionController {
@@ -22,9 +21,4 @@ public class inicioSesionController {
         }
         return false;
     }
-    public void app()
-        {
-            PantallaPrincipal pp = new PantallaPrincipal();
-            pp.setVisible(true);
-        }  
 }

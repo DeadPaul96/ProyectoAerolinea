@@ -16,6 +16,6 @@ public class ProyectoFinalDs {
 
     public static void main(String[] args) {
         FrmLogin pl = new FrmLogin();
-        pl.setVisible(true);         
+        pl.setVisible(true);     
     }
 }

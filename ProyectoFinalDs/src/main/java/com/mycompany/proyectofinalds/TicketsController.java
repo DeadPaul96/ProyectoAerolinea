@@ -15,31 +15,31 @@ import java.util.List;
  *
  * @author jeanz
  */
-public class TiketsController {
+public class TicketsController {
  
    private static final String FILE_NAME = "tikets.dat";
-   private List<Tikets> tikets;
+   private List<Tickets> tikets;
 
-   public TiketsController() {
+   public TicketsController() {
         tikets = new ArrayList<>();
         cargarDatos();
    }
 
     // Crear
-    public void agregarTikets(Tikets persona) {
+    public void agregarTickets(Tickets persona) {
         tikets.add(persona);
         guardarDatos();
     }
 
     // Leer
-    public List<Tikets> obtenerTiketss() {
+    public List<Tickets> obtenerTicketss() {
         return tikets;
     }
 
     // Actualizar
-    public void actualizarTikets(int index, Tikets nuevaTikets) {
+    public void actualizarTickets(int index, Tickets nuevaTickets) {
         if (index >= 0 && index < tikets.size()) {
-            tikets.set(index, nuevaTikets);
+            tikets.set(index, nuevaTickets);
             guardarDatos();
         } else {
             System.out.println("Índice no válido");
@@ -47,7 +47,7 @@ public class TiketsController {
     }
 
     // Borrar
-    public void borrarTikets(int index) {
+    public void borrarTickets(int index) {
         if (index >= 0 && index < tikets.size()) {
             tikets.remove(index);
             guardarDatos();
@@ -58,7 +58,7 @@ public class TiketsController {
 
     private void cargarDatos() {
         try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(FILE_NAME))) {
-            tikets = (List<Tikets>) ois.readObject();
+            tikets = (List<Tickets>) ois.readObject();
         } catch (FileNotFoundException e) {
             System.out.println("Archivo no encontrado, se creará uno nuevo.");
         } catch (IOException | ClassNotFoundException e) {

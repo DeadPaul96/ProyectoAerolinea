@@ -12,7 +12,6 @@ public class Destino {
     private String pais;
     private String ubicacion;
     private int diasponible;
-    
     public Destino (String pais)
     {
         this.diasponible = diasponible;

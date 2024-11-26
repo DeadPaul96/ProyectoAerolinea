@@ -10,44 +10,34 @@ import java.time.LocalDateTime;
  *
  * @author jeanz
  */
-public class Tikets {
+public class Tickets {
     private float precio; 
     private LocalDateTime fechaSalida;
     private int idTiket;
     
-    public Tikets (float precio,LocalDateTime fechaSalida,int idTiket )
+    public Tickets(float precio,LocalDateTime fechaSalida,int idTiket )
     {
         this.idTiket = idTiket;
         this.precio = precio;
-    
+        this.fechaSalida = fechaSalida;
     }
-
-    /**
-     * @return the precio
-     */
     public float getPrecio() {
         return precio;
     }
-
-    /**
-     * @return the idTiket
-     */
     public int getIdTiket() {
         return idTiket;
     }
-
-    /**
-     * @param precio the precio to set
-     */
     public void setPrecio(float precio) {
         this.precio = precio;
     }
 
-    /**
-     * @param idTiket the idTiket to set
-     */
     public void setIdTiket(int idTiket) {
         this.idTiket = idTiket;
+    } 
+    public LocalDateTime getFechaSalida() {
+        return fechaSalida;
     }
-    
+    public void setFechaSalida(LocalDateTime fechaSalida) {
+        this.fechaSalida = fechaSalida;
+    }
 }
